@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="college-buddy-logo.png" alt="College Buddy Logo" class="logo">
+        <h2>Thank You for Registering!</h2>
+        <br><br>
+        <p><strong>Step 1:</strong> Share this message with 5 friends on WhatsApp:</p>
+        <a class="button" href="#" onclick="shareToWhatsApp()">Share on WhatsApp</a>
+        <br><br><br>
+        <p><strong>Step 2:</strong> Join our group:</p>
+        <a class="button" href="https://chat.whatsapp.com/FEEgTbj5nYTBfJsGSEuzlh" target="_blank">Join Group</a>
+    </div>
+
+    <script>
+        function shareToWhatsApp() {
+            let message = encodeURIComponent("📢 Ham Harshit Bhaiya ke class ke liye register kar liye hain, Aap bhi kar lijiye! 🚀 Ye raha Link: https://tally.so/r/31pAGl");
+            let url = `https://api.whatsapp.com/send?text=${message}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
