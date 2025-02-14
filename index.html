@@ -19,7 +19,7 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .logo {
-            max-width: 150px;
+            max-width: 100px;
             margin-bottom: 20px;
         }
         .button {
@@ -48,7 +48,7 @@
 
     <script>
         function shareToWhatsApp() {
-            let message = encodeURIComponent("📢 Ham Harshit Bhaiya ke class ke liye register kar liye hain, Aap bhi kar lijiye! 🚀 Ye raha Link: https://tally.so/r/31pAGl");
+            let message = encodeURIComponent("Hello, Ham *Harshit Bhaiya* ke class ke liye register kar liye hain,  \n\nAap bhi kar lijiye! 🚀 \n\n*Ye raha Link:* https://tally.so/r/31pAGl");
             let url = `https://api.whatsapp.com/send?text=${message}`;
             window.open(url, '_blank');
         }
